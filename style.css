@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn {
+    padding: .8rem 2em;
+    color: #fff;
+    background: var(--button-color);
+    border: 0;
+    border-radius: 10px;
+    margin: 2rem 0;
+    cursor: pointer;
+}
+:root {
+    --button-color: #596D48;
+}
+
+/* body {
+    background-image: url("image/green-bg.jpeg");
+} */
+
+main {
+    height: 100vh;
+}
+
+.focus {
+    border-color: blue;
+}
+
+.intro {
+    background-image: url("image/green-bg.jpeg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intro .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5); width: 100%;
+    height: 15vh
+}
+
+.intro .logo img {
+    width: 15%
+}
+
+/* FORM */
+
+.form-box .header {
+   padding: 2em 20px;
+}
+
+.form-box .header h3:first-child {
+    line-height: 1.6;
+    width: 50em;
+}
+
+.form-box .header h3:last-child {
+    margin-top: 1em;
+}
+.form-box .footer {
+    padding: 1em 20px;
+}
+.form-box {
+    background: azure;
+    height: 100%;
+}
+label {
+    display: block;
+    text-transform: uppercase;
+    padding: .5em 0;
+}
+fieldset {
+    outline: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form {
+    padding: 3rem 20px;
+    max-width: 600px;
+}
+
+.form-container {
+     box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .2);
+     background: #fff;
+}
+
+form input {
+    padding: .5em 20px;
+    border: 0;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    width: 100%;
+}
+
+span {
+    cursor: pointer;
+}
+
+
+@media(min-width: 900px) {
+    main {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        align-items: center;
+    }
+}
+
+@media(max-width: 500px) {
+    .intro {
+        height: 50%;
+    }
+    fieldset {
+        flex-direction: column;
+    }
+
+    
+
+    .form-box .header h3:first-child {
+        line-height: 1.2;
+        width: unset;
+        font-size: 15px;
+    }
+
+}
